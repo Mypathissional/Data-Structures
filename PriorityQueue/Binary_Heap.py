@@ -1,6 +1,7 @@
 from PriorityQueue import Priority_Queue
 from interface import implements
 import numpy as np
+from math import log
 
 class BinaryHeap(implements(Priority_Queue)):
 
@@ -107,6 +108,25 @@ class BinaryHeap(implements(Priority_Queue)):
             self.__X[self.__last_index] = float('inf')
             self.__go_down(1)
             self.__last_index -=1
+
+    def __str__(self):
+
+        h = int(log(self.__last_index,2))
+        n_el,prev = 1,1
+        result = ''
+        for i in range(h+1):
+            prev = n_el
+            n_el += pow(2,i)
+            row= '  '.join( str(i) for i in self.__X[prev:n_el])
+            row = '  '*((h-i)) + row + '  '*((h-i))+'\n'
+            result += row
+        return result
+
+
+
+
+
+
 
 
 
