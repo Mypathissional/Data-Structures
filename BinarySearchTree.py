@@ -177,12 +177,6 @@ class BinarySearchTree:
         return self.__check_bst(self.__root)
 
 
-l = [25,15,50,10,22,35,70,4,12,18,24,31,44,66,90]
-
-tree = BinarySearchTree()
-
-for i in l:
-    tree.insert(i)
 
 
 
