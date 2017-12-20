@@ -1,7 +1,6 @@
 from PriorityQueue import Priority_Queue
 from interface import implements
 import numpy as np
-import math
 
 class BinaryHeap(implements(Priority_Queue)):
 
@@ -24,11 +23,18 @@ class BinaryHeap(implements(Priority_Queue)):
 
     def __go_down(self,i):
 
-        parent, min_child = i, 2 * i + np.argmin(self.__children(i))
+        child = self.__min_child(i)
+        if child == -1:
+            return
+        parent, min_child = i, 2 * i + child
         while self.__X[parent] > self.__X[min_child]:
+
             self.__X[parent], self.__X[min_child] = self.__swap(self.__X[parent], self.__X[min_child])
             parent = min_child
-            min_child = 2 * parent + np.argmin(self.__children(parent))
+            child = self.__min_child(parent)
+            if child == -1:
+                break
+            min_child = 2 * parent + child
 
     def __parent(self,i):
         return i/2
@@ -39,8 +45,13 @@ class BinaryHeap(implements(Priority_Queue)):
     def __right_child(self,i):
         return 2*i+1
 
-    def __children(self,i):
-        return self.__X[2*i:2*i+2]
+    def __min_child(self,i):
+        if 2*i+1 < self.n:
+            return np.argmin(self.__X[2*i:2*i+2])
+        elif 2*i <self.n:
+            return 0
+        else:
+            return -1 # out of limit
 
     def __swap(self,a,b):
         return b,a
@@ -76,7 +87,7 @@ class BinaryHeap(implements(Priority_Queue)):
 
         """
 
-        if i< self.n:
+        if i < self.n:
             dir = 1 if new_value > self.__X[i] else -1
             self.__X[i] = new_value
             if dir:

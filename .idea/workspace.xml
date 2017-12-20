@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dd861ecc-ba67-4481-bb4a-bfc51f99773b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinarySearchTree.py" afterPath="$PROJECT_DIR$/BinarySearchTree.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PriorityQueue/Binary_Heap.py" afterPath="$PROJECT_DIR$/PriorityQueue/Binary_Heap.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PriorityQueue/PriorityQueue.py" afterPath="$PROJECT_DIR$/PriorityQueue/PriorityQueue.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,8 +33,8 @@
       <file leaf-file-name="Binary_Heap.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PriorityQueue/Binary_Heap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="89" column="13" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
               <folding>
                 <element signature="e#0#40#0" expanded="true" />
               </folding>
@@ -99,6 +97,7 @@
         <option value="$PROJECT_DIR$/Binary_Heap.py" />
         <option value="$PROJECT_DIR$/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/PriorityQueue/PriorityQueue.py" />
+        <option value="$PROJECT_DIR$/PriorityQueue/temp.py" />
         <option value="$PROJECT_DIR$/PriorityQueue/Binary_Heap.py" />
       </list>
     </option>
@@ -116,7 +115,7 @@
     <option name="height" value="1713" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -129,31 +128,12 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="algo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="algo" type="462c0819:PsiDirectoryNode" />
-              <item name="PriorityQueue" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Upwork/Daniel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/PriorityQueue" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -424,14 +404,6 @@
     <entry file="file://$PROJECT_DIR$/YoungTableu.py" />
     <entry file="file://$PROJECT_DIR$/PriorityQueue.py" />
     <entry file="file://$PROJECT_DIR$/Binary_Heap.py" />
-    <entry file="file://$PROJECT_DIR$/BinarySearchTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="5" column="27" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PriorityQueue/YoungTableu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -450,10 +422,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="5" column="27" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PriorityQueue/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PriorityQueue/Binary_Heap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="98" column="0" lean-forward="true" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        <state relative-caret-position="352">
+          <caret line="89" column="13" lean-forward="false" selection-start-line="89" selection-start-column="13" selection-end-line="89" selection-end-column="13" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
