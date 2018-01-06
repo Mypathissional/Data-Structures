@@ -1,3 +1,4 @@
+import numpy as np
 class BinarySearchTree:
 
     class Node:
@@ -47,6 +48,8 @@ class BinarySearchTree:
         self.count +=1
         self.__root = self.__insert(self.__root,val)
 
+    def find(self,val):
+        return self.__check_the_value(self.__root,val)
     def find(self,val):
         return self.__check_the_value(self.__root,val)
 
@@ -175,6 +178,21 @@ class BinarySearchTree:
 
     def check_bst(self):
         return self.__check_bst(self.__root)
+
+
+    def __compute_height(self,node):
+        height = 0
+        if node:
+            height += 1 + max(self.__compute_height(node.left),self.__compute_height(node.right))
+        return height
+
+    def compute_height(self):
+        self.height = self.__compute_height(self.__root)
+        return self.height
+
+
+
+
 
 
 

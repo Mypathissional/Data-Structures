@@ -117,11 +117,11 @@ class BinaryHeap(implements(Priority_Queue)):
         for i in range(h+1):
             prev = n_el
             n_el += pow(2,i)
-            row= '  '.join( str(i) for i in self.__X[prev:n_el])
-            row = '  '*((h-i)) + row + '  '*((h-i))+'\n'
+            s = '  '*(int((h-i)/2)+1)
+            row= s.join( str(i) for i in self.__X[prev:n_el])
+            row = '    '*((h-i)) + row + '    '*((h-i))+'\n'
             result += row
         return result
-
 
 
 
